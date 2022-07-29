@@ -11,4 +11,9 @@ export const Container = styled.button`
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  :disabled {
+    filter: brightness(0.3);
+    color: white;
+  }
 `;

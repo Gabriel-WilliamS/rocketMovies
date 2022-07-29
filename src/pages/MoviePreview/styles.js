@@ -7,6 +7,7 @@ export const Container = styled.div`
   grid-template-areas:
     "header"
     "content";
+  grid-template-rows: 11.6rem auto;
 
   > main {
     padding: 4rem 12.3rem;

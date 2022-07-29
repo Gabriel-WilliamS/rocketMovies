@@ -27,11 +27,19 @@ export const Form = styled.form`
   margin: -10rem auto;
 
   div:nth-child(3) {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.5rem;
   }
 
   button {
     margin-top: 2.4rem;
+  }
+
+  > label {
+    display: block;
+    width: fit-content;
+    margin-bottom: 5px;
+    padding-left: 0.5rem;
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_RED};
   }
 `;
 

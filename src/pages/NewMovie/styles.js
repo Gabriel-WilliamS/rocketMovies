@@ -18,7 +18,7 @@ export const Container = styled.div`
 export const Form = styled.div`
   grid-area: content;
   padding: 4rem 12.3rem;
-  height: 100vh;
+
   a {
     display: flex;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_RED};

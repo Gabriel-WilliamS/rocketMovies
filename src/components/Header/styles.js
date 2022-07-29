@@ -21,7 +21,6 @@ export const Profile = styled.div`
   div {
     display: flex;
     flex-direction: column;
-    text-align: right;
 
     p {
       color: ${({ theme }) => theme.COLORS.GRAY_100};
@@ -30,6 +29,8 @@ export const Profile = styled.div`
 
     a {
       color: ${({ theme }) => theme.COLORS.GRAY_300};
+      width: fit-content;
+      align-self: flex-end;
     }
   }
 

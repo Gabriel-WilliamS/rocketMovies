@@ -1,18 +1,32 @@
 import { Container, Tags } from "./styles";
 import { Tag } from "../Tag";
 import { Rating } from "../Rating";
-export function Movie({ data }) {
-  return (
-    <Container to="/movie-preview">
-      <strong>{data.name}</strong>
+export function Movie({ data, ...rest }) {
+  var student = {
+    arrey: [
+      {
+        class1: {
+          morning: {
+            name: "Anamika Rai",
+            age: 14,
+            gender: "female"
+          }
+        }
+      }
+    ]
+  };
 
-      <Rating rate={data.note} />
+  return (
+    <Container {...rest}>
+      <strong>{data.title}</strong>
+
+      <Rating rate={data.rating} />
 
       <p>{data.description}</p>
 
       <Tags>
-        {data.tags.map((tagname, i) => (
-          <Tag name={tagname} key={i} />
+        {data.tags.map((tag) => (
+          <Tag name={tag.name} key={tag.id} />
         ))}
       </Tags>
     </Container>
